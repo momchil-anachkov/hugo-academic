@@ -53,7 +53,7 @@
         {{ end }}
 
         {{/* Get active page. */}}
-        {{ $is_link_in_current_path := eq $current_page.RelPermalink .URL }}
+        {{ $is_link_in_current_path := in $current_page.RelPermalink .URL }}
         {{ $is_widget_page := or $current_page.IsHome (eq $current_page.Type "widget_page") }}
         {{ $hash := findRE "#(.+)" .URL }}
         {{ $is_same_page := $is_link_in_current_path }}
@@ -71,8 +71,6 @@
             {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
           </a>
         </li>
-          "{{ $current_page.URL }}"
-          "{{ $current_page.RelPermalink }}"
 
         {{ end }}
         {{ end }}
