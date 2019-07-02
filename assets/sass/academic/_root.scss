@@ -448,6 +448,18 @@ a.badge:hover {
   border-radius: 0 6px 6px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .btn-toolbar .btn-group {
+    width: 100%;
+  }
+
+  .btn-toolbar .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    border-radius: 6px 6px 6px 6px !important;
+  }
+}
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
   background-color: $sta-primary-light !important;
