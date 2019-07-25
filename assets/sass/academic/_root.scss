@@ -434,32 +434,18 @@ a.badge:hover {
  *  Toolbar Buttons
  **************************************************/
 
+.btn-toolbar {
+  margin: 0 -6px;
+}
+
 .btn-toolbar .btn {
   font-size: 0.9rem;
   padding: 10px 14px 9px;
   border: none;
+  border-radius: 6px !important;
+  margin: 6px !important;
 }
 
-.btn-toolbar .btn:first-child {
-  border-radius: 6px 0 0 6px;
-}
-
-.btn-toolbar .btn:last-child {
-  border-radius: 0 6px 6px 0;
-}
-
-@media screen and (max-width: 767px) {
-  .btn-toolbar .btn-group {
-    width: 100%;
-  }
-
-  .btn-toolbar .btn {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.2rem;
-    border-radius: 6px 6px 6px 6px !important;
-  }
-}
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
   background-color: $sta-primary-light !important;
