@@ -435,7 +435,7 @@ a.badge:hover {
  **************************************************/
 
 .btn-toolbar {
-  margin: 0 -6px;
+  margin: 0 -.2rem;
 }
 
 .btn-toolbar .btn {
@@ -443,7 +443,19 @@ a.badge:hover {
   padding: 10px 14px 9px;
   border: none;
   border-radius: 6px !important;
-  margin: 6px !important;
+  margin: .2rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-toolbar .btn-group {
+    width: 100%;
+  }
+
+  .btn-toolbar .btn {
+    display: block;
+    width: 100%;
+    margin: 0 .2rem .4rem .2rem !important;
+  }
 }
 
 .btn-toolbar .btn.btn-primary:hover,
